@@ -10,6 +10,19 @@ It is composed by three files:
 - Client.java: a simple client to demonstrate the invocation of method's on the remote object.
 
 ### First, install the JDK on the machines:
+
   sudo apt install default-jdk
+
+### Then, configure the firewall (security group)
+
+  Open the following ports for TCP: 1099, 1900
+
+### Then, run the server on one machine and the client on another
+
+  java example.hello.Server
+
+  java example.hello.Client <IP_Address_of_Server>
+  
+### Now, extend the example:
 
 Try adding other methods to the remote object and calling them from the client.
