@@ -56,6 +56,10 @@ public class Client {
             System.out.println("Found server");
             String response = stub.sayHello();
             System.out.println("response: " + response);
+
+            int resp = stub.soma(100,1000);
+            System.out.println("Response from soma: " + resp);
+            
         } catch (Exception e) {
             System.err.println("Client exception: " + e.toString());
             e.printStackTrace();
