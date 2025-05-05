@@ -9,4 +9,7 @@ It is composed by three files:
 - Server.java: implementation of the remote object + code to start a server process where the object will run
 - Client.java: a simple client to demonstrate the invocation of method's on the remote object.
 
+### First, install the JDK on the machines:
+  sudo apt install default-jdk
+
 Try adding other methods to the remote object and calling them from the client.
