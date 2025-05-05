@@ -48,8 +48,11 @@ public class Client {
 
         String host = (args.length < 1) ? null : args[0];
         try {
+            System.out.println("Initiating client");
             Registry registry = LocateRegistry.getRegistry(host);
+            System.out.println("Registry has been located");
             Hello stub = (Hello) registry.lookup("Hello");
+            System.out.println("Found server");
             String response = stub.sayHello();
             System.out.println("response: " + response);
         } catch (Exception e) {
