@@ -9,11 +9,11 @@ It is composed by three files:
 - Server.java: implementation of the remote object + code to start a server process where the object will run
 - Client.java: a simple client to demonstrate the invocation of method's on the remote object.
 
-### First, install the JDK on the machines:
+### First, if necessary, install the JDK on the machines:
 
   sudo apt install default-jdk
 
-### Then, configure the firewall (security group)
+### Then, configure the firewall (security group -- if running it on AWS)
 
   Open the following ports for TCP: 1099, 1900
 
