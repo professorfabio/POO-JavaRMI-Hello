@@ -1,6 +1,6 @@
 package example.hello;
 
-public class Servant implements Hello {
+public class HelloObjectImplem implements Hello {
 
     public Servant() {}
 
