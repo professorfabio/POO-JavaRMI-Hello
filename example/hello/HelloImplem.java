@@ -1,8 +1,8 @@
 package example.hello;
 
-public class HelloObjectImplem implements Hello {
+public class HelloImplem implements Hello {
 
-    public Servant() {}
+    public HelloImplem() {}
 
     public String sayHello() {
         return "Hello, world!";
