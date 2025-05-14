@@ -5,22 +5,14 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-public class Server implements Hello {
+public class Server {
 
     public Server() {}
-
-    public String sayHello() {
-        return "Hello, world!";
-    }
-
-    public int soma (int a, int b) {
-        return a + b;
-    }
 
     public static void main(String args[]) {
 
         try {
-            Server obj = new Server();
+            Server obj = new Servant();
             Hello stub = (Hello) UnicastRemoteObject.exportObject(obj, 0);
 
             // Bind the remote object's stub in the registry
