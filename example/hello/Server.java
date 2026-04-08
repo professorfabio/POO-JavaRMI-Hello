@@ -13,7 +13,7 @@ public class Server {
 
         try {
             HelloImplem obj = new HelloImplem();
-            Hello stub = (Hello) UnicastRemoteObject.exportObject(obj, 0);
+            Hello stub = (Hello) UnicastRemoteObject.exportObject(obj, 5678);
 
             // Bind the remote object's stub in the registry
             Registry registry = LocateRegistry.getRegistry();
